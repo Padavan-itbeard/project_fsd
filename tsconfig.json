@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // Куда происходит сборка (не важна, когда собирается через webpack)
+    "outDir": "./dist/",
+    /*
+       Подсвечивает все места, где не указан тип.
+       Однако это не означает, что теперь нельзя использовать тип any.
+       Это говорит, что тип any нужно использовать явно.
+        */
+    "noImplicitAny": true,
+    // Указываем типы модульной сборки
+    "module": "ESNext", // для back-end лучше command js
+    // Указываем версию ECMA Script в которую компилируется код
+    "target": "es5",
+    // Поддержка JSX разметки вне компонентов
+    "jsx": "react",
+    // Компилятор будет обрабатывать не только .ts файлы, но и .js
+    "allowJs": true,
+    // Определяет, какими будут импорты
+    "moduleResolution": "node",
+    /* 
+        esModuleInterop позволяет работать с пакетами, которые используют
+        common js как с обычными пакетами с помощью import (require() module.export) = common js
+        */
+    "esModuleInterop": true,
+    /*
+        Если какая-либо библиотека не имеет default import, loader's вроде ts-loader or babel-loader
+        автоматически заменят вместо
+        import * as React from 'react'; на
+        import React from 'react';
+        */
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
