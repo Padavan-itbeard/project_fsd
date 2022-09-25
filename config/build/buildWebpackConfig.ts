@@ -1,4 +1,3 @@
-import path from "path";
 import { Configuration } from "webpack";
 import { buildDevServer } from "./buildDevServer";
 import { buildLoaders } from "./buildLoaders";
@@ -13,7 +12,7 @@ export function buildWebpackConfig(options: BuildOptions): Configuration {
     mode,
     entry: paths.entry,
     output: {
-      filename: "[name].js",
+      filename: "[name].[contenthash:6].js",
       path: paths.build,
       clean: true,
     },
