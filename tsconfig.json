@@ -29,7 +29,7 @@
         import * as React from 'react'; на
         import React from 'react';
         */
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
   },
   "ts-node": {
     "compilerOptions": {
