@@ -1,7 +1,7 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
+  "description": "FSD - Architectural methodology for frontend projects",
   "main": "index.js",
   "scripts": {
     "dev": "webpack",
@@ -9,7 +9,7 @@
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development"
   },
-  "keywords": [],
+  "keywords": ["FSD", "FRONT-END", "React"],
   "author": "Alexandr Ivanov",
   "license": "ISC",
   "devDependencies": {
